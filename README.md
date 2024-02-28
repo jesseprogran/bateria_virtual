@@ -1,7 +1,11 @@
 # Bateria Virtual
 
 Este é um projeto de uma bateria virtual desenvolvida utilizando HTML e CSS. A intenção é criar uma interface interativa que simula o funcionamento de uma bateria musical, onde o usuário pode clicar nos elementos da bateria para produzir sons correspondentes.
+
+
+## Foto do Projeto
 ![Bateria Virtual](https://github.com/jesseprogran/bateria_virtual/assets/113396724/dfc736f4-8293-4370-be13-4c428fd52529)
+
 ## Funcionalidades
 
 - Interface de usuário intuitiva.
