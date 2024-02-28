@@ -49,21 +49,22 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const keys = document.querySelectorAll(".key");
+      // advanced solution
+      const playSound = (dataKey) =>
+        document
+          .getElementById(`s_${dataKey}`)
+          ?.play()
+          ?.then(() => (audioElement.currentTime = 0));
 
-        keys.forEach((key) =>
-          key.addEventListener("click", () => {
-            const dataKey = key.getAttribute("data-key");
-            const audioElement = document.getElementById(`s_${dataKey}`);
-
-            if (audioElement) {
-              audioElement.currentTime = 0;
-              audioElement.play();
-            }
-          })
-        );
-      });
+      document.addEventListener("DOMContentLoaded", () =>
+        document
+          .querySelectorAll(".key")
+          .forEach((key) =>
+            key.addEventListener("click", () =>
+              playSound(key.getAttribute("data-key"))
+            )
+          )
+      );
     </script>
   </body>
 </html>
