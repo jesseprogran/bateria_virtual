@@ -47,5 +47,23 @@
       <audio src="assets/sounds/keyx.wav" id="s_keyx"></audio>
       <audio src="assets/sounds/keyc.wav" id="s_keyc"></audio>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const keys = document.querySelectorAll(".key");
+
+        keys.forEach((key) =>
+          key.addEventListener("click", () => {
+            const dataKey = key.getAttribute("data-key");
+            const audioElement = document.getElementById(`s_${dataKey}`);
+
+            if (audioElement) {
+              audioElement.currentTime = 0;
+              audioElement.play();
+            }
+          })
+        );
+      });
+    </script>
   </body>
 </html>
