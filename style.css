@@ -42,6 +42,11 @@
   font-weight: bold;
 }
 
+.key.active {
+  border: 2px solid #ff0;
+  color: #ff0;
+}
+
 .composer {
   width: 260px;
   margin-top: 20px;
