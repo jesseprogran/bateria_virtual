@@ -43,8 +43,8 @@
 }
 
 .key.active {
-  border: 2px solid #ff0;
-  color: #ff0;
+  border: 2px solid rgb(255, 98, 0);
+  color: rgb(255, 89, 0);
 }
 
 .composer {
